@@ -1,0 +1,49 @@
+<!-- templates/upload.html -->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>MarkItDown Converter</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .upload-form {
+            border: 2px dashed #ccc;
+            padding: 20px;
+            text-align: center;
+        }
+        .submit-button {
+            margin-top: 20px;
+            padding: 10px 20px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <h1>MarkItDown File Converter</h1>
+    <div class="upload-form">
+        <form method="post" enctype="multipart/form-data">
+            <input type="file" name="file" accept=".pdf,.docx,.xlsx,.pptx,.jpg,.jpeg,.png,.html,.txt,.csv,.json,.xml">
+            <br>
+            <input type="submit" value="Convert to Markdown" class="submit-button">
+        </form>
+    </div>
+    <div>
+        <h3>対応ファイル形式:</h3>
+        <ul>
+            <li>Microsoft Office (.docx, .xlsx, .pptx)</li>
+            <li>PDF (.pdf)</li>
+            <li>画像 (.jpg, .jpeg, .png)</li>
+            <li>テキスト (.txt, .csv, .json, .xml)</li>
+            <li>HTML (.html)</li>
+        </ul>
+    </div>
+</body>
+</html>
+
